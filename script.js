@@ -64,7 +64,7 @@ cells2.forEach(function cell(item) {
             
             console.log(result);
             clickedItems.forEach(function resetColor(item) {
-                item.style.backgroundColor = 'rgb(153, 153, 153)';
+                item.style.backgroundColor = 'rgb(150, 150, 150)';
             })
             clickedItems = []; 
         }
