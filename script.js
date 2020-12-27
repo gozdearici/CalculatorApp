@@ -11,12 +11,18 @@ let a = "";
 
 let clickedItems = [];
 
+
 cells.forEach(function cell(item) {
     item.addEventListener("click", function divClick(){
-        let r = Math.floor(Math.random()*255);
-        let g = Math.floor(Math.random()*255);
-        let b = Math.floor(Math.random()*255);
-        item.style.backgroundColor = `rgb(${r}, ${g}, ${b}`;
+        item.style.color = "white";
+        item.style.boxShadow = `inset 0 0 60px whitesmoke,
+        inset 20px 0 80px #f0f,
+        inset -20px 0 80px #0ff,
+        inset 20px 0 300px #f0f,
+        inset -20px 0 300px #0ff,
+        0 0 50px #fff,
+        -10px 0 80px #f0f,
+        10px 0 80px #0ff`;
         clickedItems.push(item);
         clickedItems.forEach(function b(item) {
             a += item.textContent;
@@ -29,10 +35,14 @@ cells.forEach(function cell(item) {
 
 cells2.forEach(function cell(item) {
     item.addEventListener("click", function divClick(){
-        let r = Math.floor(Math.random()*255);
-        let g = Math.floor(Math.random()*255);
-        let b = Math.floor(Math.random()*255);
-        item.style.backgroundColor = `rgb(${r}, ${g}, ${b}`;
+        item.style.boxShadow = `inset 0 0 60px whitesmoke,
+        inset 20px 0 80px #f0f,
+        inset -20px 0 80px #0ff,
+        inset 20px 0 300px #f0f,
+        inset -20px 0 300px #0ff,
+        0 0 50px #fff,
+        -10px 0 80px #f0f,
+        10px 0 80px #0ff`;
         clickedItems.push(item);
         clickedItems.forEach(function b(item) {
             a += item.textContent;

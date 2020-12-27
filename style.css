@@ -1,27 +1,62 @@
 body {
-    background-color: rgb(20, 17, 24);
+    background-color: #d6cbcb;
 }
 
 #head {
-    color: rgba(255, 255, 255, 0.418);
+  border: 3px solid #AC90B3;
+  width: 200px;
+  margin: auto;
+  text-align: center;
+  color:#AC90B3;
+  box-decoration-break: clone;
+  border-radius: 10px;
 }
+
 
 .grid {
   display: flex;                       /* establish flex container */
   flex-wrap: wrap;                     /* enable flex items to wrap */
   justify-content: space-around;
-  
+  margin-top: 30px;
+
 }
 .cell {
-  flex: 0 0 32%;                       /* don't grow, don't shrink, width */
-  height: 50px;
-  margin-bottom: 5px;
-  background-color: #999;
-  font-weight: bold;
+  flex: 0 0 25%; 
+  background-color: #fafafa;
+  display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 7px;
+  margin-left: 1em;
+  margin-right: 0.5em;  
+  height: 50px;
+  margin-bottom: 20px;
+  background-color:#ddd6d6;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 2px 20px 20px 2px #6095a5;
   display: flex;
+
 }
+
+.cell:hover {
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  font-weight: 900;
+  text-decoration: none;
+  animation: animate 4s linear infinite;
+  box-shadow:
+  inset 0 0 60px whitesmoke,
+  inset 20px 0 80px #f0f,
+  inset -20px 0 80px #0ff,
+  inset 20px 0 300px #f0f,
+  inset -20px 0 300px #0ff,
+  0 0 50px #fff,
+  -10px 0 80px #f0f,
+  10px 0 80px #0ff;
+}
+
+
           
 .grid2 {
     display: flex;                       /* establish flex container */
@@ -31,22 +66,64 @@ body {
 
 .cell2 {
     flex: 0 0 15%;                           /* don't grow, don't shrink, width */
-    height: 50px;
-    margin-bottom: 5px;
-    background-color: #999;
-    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    background-color: rgb(223, 215, 215);
+    font-weight: bolder;
     align-items: center;
     justify-content: center;
+    margin-left: 1em;
+    margin-right: 0.5em;  
+    height: 30px;
+    margin-bottom: 5px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    box-shadow: 2px 20px 20px 2px #6095a5;
     display: flex;
   }
 
+  
+.cell2:hover {
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  font-weight: 900;
+  text-decoration: none;
+  animation: animate 4s linear infinite;
+  box-shadow:
+  inset 0 0 60px whitesmoke,
+  inset 20px 0 80px #f0f,
+  inset -20px 0 80px #0ff,
+  inset 20px 0 300px #f0f,
+  inset -20px 0 300px #0ff,
+  0 0 50px #fff,
+  -10px 0 80px #f0f,
+  10px 0 80px #0ff;
+}
+
 .cell3 {
     flex: 0 0 100%;                           /* don't grow, don't shrink, width */
-    height: 50px;
-    margin-bottom: 5px;
+    height: 60px;
+    margin-top: 25px;
     background-color: #999;
+    color: white;
+    font-size: 25px;
     font-weight: bold;
     align-items: center;
     justify-content: center;
+    margin-left: 1em;
+    margin-right: 0.5em;  
+    margin-bottom: 5px;
+    border-radius: 10em;
+    background: linear-gradient(30deg, #9b4e9180, #2892d8af);
+    box-shadow: 2px 20px 20px 2px #619fb4;
     display: flex;
+}
+
+.cell3:hover {
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  font-weight: 900;
+  text-decoration: none;
+  animation: animate 4s linear infinite;
 }
